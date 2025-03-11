@@ -1,2 +1,2 @@
 # FinManager
-Finance Manager
+Finance Manage
