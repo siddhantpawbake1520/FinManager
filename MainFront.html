@@ -26,18 +26,19 @@
     </section>
 
     <!-- Login Modal -->
-    <div id="loginModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <div class="bg-white p-6 rounded-md shadow-lg w-96 text-center">
-            <h2 class="text-2xl font-bold mb-4">Login</h2>
-            <input type="email" placeholder="Email" class="w-full p-2 border rounded mb-2">
-            <input type="password" placeholder="Password" class="w-full p-2 border rounded mb-4">
-            <button class="bg-blue-500 text-white px-4 py-2 rounded w-full">Login</button>
-            <p class="mt-2 text-sm">
-                Don't have an account? <a href="register.html" id="registerLink" class="text-blue-600">Create One</a>
-            </p>
-            <button onclick="toggleModal()" class="mt-4 text-gray-600">Close</button>
-        </div>
+<div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 transform scale-95 hidden">
+    <div class="bg-white p-6 rounded-md shadow-lg w-96 text-center">
+        <h2 class="text-2xl font-bold mb-4">Login</h2>
+        <input type="email" placeholder="Email" class="w-full p-2 border rounded mb-2">
+        <input type="password" placeholder="Password" class="w-full p-2 border rounded mb-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded w-full">Login</button>
+        <p class="mt-2 text-sm">Don't have an account? 
+            <a href="register.html" class="text-blue-600">Create One</a>
+        </p>
+        <button onclick="toggleModal()" class="mt-4 text-gray-600">Close</button>
     </div>
+</div>
+
 
     <!-- Features & Footer Section -->
     <section id="featuresSection" class="opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out">
