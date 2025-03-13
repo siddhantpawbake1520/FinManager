@@ -36,26 +36,28 @@
             <button onclick="toggleModal()" class="mt-4 text-gray-600">Close</button>
         </div>
     </div>
-<!-- Features & Footer Section (Initially Hidden) -->
-<section id="featuresSection" class="opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out">
-    <div class="bg-gray-900 py-10">
-        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-6">
-            <div class="bg-white p-6 rounded-md shadow-md flex justify-center">
-                <img src="icon1.svg" alt="Feature 1">
-            </div>
-            <div class="bg-white p-6 rounded-md shadow-md flex justify-center">
-                <img src="icon2.svg" alt="Feature 2">
-            </div>
-            <div class="bg-white p-6 rounded-md shadow-md flex justify-center">
-                <img src="icon3.svg" alt="Feature 3">
-            </div>
-            <div class="bg-white p-6 rounded-md shadow-md flex justify-center">
-                <img src="icon4.svg" alt="Feature 4">
+
+    <!-- Features & Footer Section -->
+    <section id="featuresSection" class="opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out">
+        <div class="bg-gray-900 py-10">
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-6">
+                <div class="bg-white p-6 rounded-md shadow-md flex justify-center">
+                    <img src="icon1.svg" alt="Feature 1">
+                </div>
+                <div class="bg-white p-6 rounded-md shadow-md flex justify-center">
+                    <img src="icon2.svg" alt="Feature 2">
+                </div>
+                <div class="bg-white p-6 rounded-md shadow-md flex justify-center">
+                    <img src="icon3.svg" alt="Feature 3">
+                </div>
+                <div class="bg-white p-6 rounded-md shadow-md flex justify-center">
+                    <img src="icon4.svg" alt="Feature 4">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
+    <!-- Footer (Keep as it is) -->
     <footer class="bg-black text-white text-center p-6">
         <div class="container mx-auto flex justify-between">
             <div>
@@ -73,25 +75,8 @@
             </div>
         </div>
     </footer>
-</section>
 
-<!-- JavaScript to Show Section on Scroll -->
-<script>
-    window.addEventListener("scroll", function() {
-        const section = document.getElementById("featuresSection");
-        const position = section.getBoundingClientRect().top;
-        const screenHeight = window.innerHeight;
-
-        if (position < screenHeight - 100) {
-            section.classList.add("opacity-100", "translate-y-0");
-        }
-    });
-</script>
-
-    <script>
-        function toggleModal() {
-            document.getElementById("loginModal").classList.toggle("hidden");
-        }
-    </script>
+    <!-- Link JavaScript File -->
+    <script src="Front.JS"></script>
 </body>
 </html>
