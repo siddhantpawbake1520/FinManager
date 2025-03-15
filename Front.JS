@@ -18,29 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 300);
         }
     };
-
-    // Handle Registration Form Submission
-    const registerForm = document.getElementById("registerForm");
-    if (registerForm) {
-        registerForm.addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            const firstName = document.getElementById("firstName").value.trim();
-            const lastName = document.getElementById("lastName").value.trim();
-            const panCard = document.getElementById("panCard").value.trim();
-            const birthDate = document.getElementById("birthDate").value;
-            const age = document.getElementById("age").value;
-
-            if (!firstName || !lastName || !panCard || !birthDate || !age) {
-                alert("⚠️ Please fill in all required fields.");
-                return;
-            }
-
-            alert("✅ Registration Successful!");
-            window.location.href = "MainFront.html"; // Redirect after successful registration
-        });
-    }
-
     // Smooth Scroll Animation for Features Section
     const featuresSection = document.getElementById("featuresSection");
     if (featuresSection) {

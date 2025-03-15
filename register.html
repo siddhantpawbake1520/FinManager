@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - FinanceGuide</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="main.js" defer></script>
 </head>
 <body class="font-sans bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-6 rounded-md shadow-lg w-96 text-center">
+    <div class="bg-white p-6 rounded-md shadow- lg w-96 text-center">
         <h2 class="text-2xl font-bold mb-4">Create an Account</h2>
         <form id="registerForm">
-            <input type="text" id="firstName" placeholder="First Name" class="w-full p-2 border rounded mb-2" required>
-            <input type="text" id="middleName" placeholder="Middle Name" class="w-full p-2 border rounded mb-2">
-            <input type="text" id="lastName" placeholder="Last Name" class="w-full p-2 border rounded mb-2" required>
-            <input type="text" id="panCard" placeholder="PAN Card" class="w-full p-2 border rounded mb-2" required>
-            <input type="date" id="birthDate" class="w-full p-2 border rounded mb-2" required>
-            <input type="number" id="age" placeholder="Age" class="w-full p-2 border rounded mb-4" required>
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded w-full">Register</button>
+            <input type="text" id="fullName" placeholder="Full Name" class="w-full p-2 border rounded mb-2" required>
+            <input type="email" id="email" placeholder="E-mail ID" class="w-full p-2 border rounded mb-2" required>
+            <input type="password" id="password" placeholder="Password" class="w-full p-2 border rounded mb-2" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" class="w-full p-2 border rounded mb-4" required>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded w-full">Create Account</button>
         </form>
         <p class="mt-2 text-sm">Already have an account? <a href="MainFront.html" class="text-blue-600">Login</a></p>
     </div>
 
-    <script src="main.js"></script> <!-- Link JavaScript File -->
+    <script src="front.js"></script> <!-- Link JavaScript File -->
 </body>
 </html>
